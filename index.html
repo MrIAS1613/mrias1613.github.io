@@ -3,85 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Istiaque Ahmed Shishir - Student, Entrepreneur, Passionate about Cars, AI, Music & Psychology">
   <title>Istiaque Ahmed Shishir</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-body {
-      font-family: 'Poppins', sans-serif;
-background-color: #000000;
-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #fff;
-      text-align: center;
-  h1, h2, h3, .header-text {
-  font-family: 'Orbitron', sans-serif; 
-  color: #00ffff; 
-  text-transform: uppercase;
-  }
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
-    }
-    img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-    h1 {
-      margin: 10px 0;
-      font-size: 28px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .social-icons a {
-      font-size: 28px;
-      margin: 0 15px;
-      color: #fff;
-      transition: 0.3s;
-    }
-    .social-icons a:hover {
-      color: #ffcc00;
-      transform: scale(1.2);
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="card">
-    <img src="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" alt="Shishir's Photo">
-    <h1>Istiaque Ahmed Shishir</h1>
-    <p> Student | Entrepreneur </p>
-    <p> Passionate about Cars, AI, Music and Psychology </p>
-    <p></p>
-    <div class="social-icons">
-      <a href="mailto:istiaque1613@gmail.com" target="_blank">
-  <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.facebook.com/mr.ias1613?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/___mr_i_a_s_1613___?igsh=MXZkeG0zcXc0Mnlxeg==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/qr/6GOZTKFTUDIAA1" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.snapchat.com/add/mr_ias1613?share_id=9B5V4Dnlo6s&locale=en-US" target="_blank"><i class="fab fa-snapchat"></i></a>
-      <a href="https://www.linkedin.com/in/istiaque-ahmed-956571274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/MrIAS1613" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://x.com/i_a_s_1613?t=rajSAMHabJirTP6oAQa1sQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.reddit.com/user/Mr_I_A_S_1613/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button" target="_blank"><i class="fab fa-reddit"></i></a>
-      <a href="https://discord.com/users/782296184692932640" target="_blank">
-  <i class="fab fa-discord"></i>
-      </a>
-      <a href="https://pin.it/1TccjMQ8t" target="_blank"><i class="fab fa-pinterest"></i></a>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero fade-in">
+      <img src="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" alt="Istiaque Ahmed Shishir">
+      <h1>Istiaque Ahmed Shishir</h1>
+      <p>Student | Entrepreneur</p>
+      <p>Passionate about Cars, AI, Music & Psychology</p>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
-  </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>Hello! I’m Istiaque, a student and entrepreneur with a passion for cars, AI, music, and psychology. I enjoy creating solutions, learning new skills, and sharing ideas that make life better.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Morium Enterprise</h3>
+        <p>Car sales business. Showcasing vehicles, deals, and client success stories.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>Developed a chatbot using Python for personal and business automation.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>Reach out via any of the following platforms:</p>
+    <ul class="contact-links">
+      <li><a href="mailto:istiaque1613@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://discord.com/users/782296184692932640" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+      <li><a href="https://github.com/MrIAS1613" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/istiaque-ahmed-956571274" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/mr.ias1613" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="https://www.instagram.com/___mr_i_a_s_1613___" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://wa.me/qr/6GOZTKFTUDIAA1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="https://x.com/i_a_s_1613" target="_blank"><i class="fab fa-twitter"></i> X</a></li>
+      <li><a href="https://www.reddit.com/user/Mr_I_A_S_1613/" target="_blank"><i class="fab fa-reddit"></i> Reddit</a></li>
+      <li><a href="https://www.snapchat.com/add/mr_ias1613" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a></li>
+      <li><a href="https://pin.it/1TccjMQ8t" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Istiaque Ahmed Shishir. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
