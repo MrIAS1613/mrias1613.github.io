@@ -1,79 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Istiaque Ahmed Shishir - Student, Entrepreneur, Passionate about Cars, AI, Music & Psychology">
-  <title>Istiaque Ahmed Shishir</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Istiaque Ahmed Shishir — Student, Entrepreneur. Cars, AI, Music & Psychology." />
+
+  <!-- Open Graph / Twitter cards -->
+  <meta property="og:title" content="Istiaque Ahmed Shishir — Portfolio" />
+  <meta property="og:description" content="Student and entrepreneur building projects in cars, AI, and music." />
+  <meta property="og:image" content="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Istiaque Ahmed Shishir — Portfolio</title>
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Hero Section -->
-  <header id="home">
-    <div class="hero fade-in">
-      <img src="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" alt="Istiaque Ahmed Shishir">
-      <h1>Istiaque Ahmed Shishir</h1>
-      <p>Student | Entrepreneur</p>
-      <p>Passionate about Cars, AI, Music & Psychology</p>
-      <a href="#contact" class="btn">Contact Me</a>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" alt="Istiaque Ahmed Shishir" class="avatar">
+        <div>
+          <h1 class="name">Istiaque Ahmed Shishir</h1>
+          <p class="tag">Student · Entrepreneur · Cars · AI · Music · Psychology</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <button id="navToggle" aria-expanded="false" aria-controls="navList" class="nav-toggle"><i class="fas fa-bars"></i></button>
+        <ul id="navList" class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>Hello! I’m Istiaque, a student and entrepreneur with a passion for cars, AI, music, and psychology. I enjoy creating solutions, learning new skills, and sharing ideas that make life better.</p>
-  </section>
+  <main id="main">
 
-  <!-- Projects Section -->
-  <section id="projects" class="fade-in">
-    <h2>My Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Morium Enterprise</h3>
-        <p>Car sales business. Showcasing vehicles, deals, and client success stories.</p>
-        <a href="#" class="btn">Learn More</a>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-copy animate fade-up">
+          <h2 id="hero-heading">Building things that move people and machines.</h2>
+          <p class="lead">I’m Istiaque — a student and entrepreneur focused on car sales, small AI tools, music projects, and applied psychology. I build projects, experiment with ideas and work on ventures that scale.</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn primary">See Projects</a>
+            <a href="#contact" class="btn outline">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-image animate fade-left">
+          <img src="https://ik.imagekit.io/mrias1613/1000006177.jpg?updatedAt=1755704141188" alt="Portrait of Istiaque Ahmed Shishir">
+        </div>
       </div>
-      <div class="project-card">
-        <h3>AI Chatbot</h3>
-        <p>Developed a chatbot using Python for personal and business automation.</p>
-        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-grid">
+          <div class="about-card animate fade-right">
+            <h3 id="about-heading">About Me</h3>
+            <p>I’m a university student and entrepreneur from Dhanbari, Tangail. I run Morium Enterprise (car sales), experiment with chatbots and enjoy music production. I’m curious about psychology and building practical tools that help people and businesses.</p>
+            <p>Currently focused on: <strong>car business growth</strong>, <strong>chatbot automation</strong>, and <strong>small AI tools</strong> for workflows.</p>
+          </div>
+
+          <div class="skills animate fade-left">
+            <h4>Skills & Tools</h4>
+            <ul class="skills-list">
+              <li>Python · Flask</li>
+              <li>HTML · CSS · JavaScript</li>
+              <li>Git · GitHub</li>
+              <li>Basic audio production</li>
+              <li>Business operations · Sales</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <!-- Add more project cards as needed -->
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h3 id="projects-heading">Selected Projects</h3>
+        <p class="muted">Click a project to view details. Tech and links included.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate fade-up">
+            <h4>Morium Enterprise</h4>
+            <p class="project-desc">Car sales business — listing vehicles, managing leads and customer success stories.</p>
+            <p class="project-meta"><strong>Role:</strong> Owner · Sales · Operations</p>
+            <p class="project-meta"><strong>Tech:</strong> HTML · CSS · WhatsApp Business</p>
+            <div class="project-actions">
+              <a href="#" class="btn sm">Details</a>
+              <a href="#" class="btn sm outline">Visit</a>
+            </div>
+          </article>
+
+          <article class="project-card animate fade-up">
+            <h4>AI Chatbot (Personal)</h4>
+            <p class="project-desc">Lightweight Python chatbot used for automating responses and tasks for business processes.</p>
+            <p class="project-meta"><strong>Role:</strong> Developer</p>
+            <p class="project-meta"><strong>Tech:</strong> Python · Flask · NLP</p>
+            <div class="project-actions">
+              <a href="#" class="btn sm">Code</a>
+              <a href="#" class="btn sm outline">Demo</a>
+            </div>
+          </article>
+
+          <!-- Add more projects following same structure -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h3 id="contact-heading">Contact</h3>
+        <p class="muted">Primary channels are highlighted. I check email and LinkedIn most frequently.</p>
+
+        <div class="contact-grid animate fade-up">
+          <!-- Primary -->
+          <a class="contact-card primary-contact" href="mailto:istiaque1613@gmail.com" aria-label="Email Istiaque">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/istiaque-ahmed-956571274" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a class="contact-card" href="https://github.com/MrIAS1613" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a class="contact-card" href="https://wa.me/qr/6GOZTKFTUDIAA1" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+
+          <a class="contact-card" href="https://x.com/i_a_s_1613" target="_blank" rel="noopener" aria-label="X">
+            <i class="fab fa-x-twitter"></i>
+            <span>X</span>
+          </a>
+
+          <a class="contact-card" href="https://www.instagram.com/___mr_i_a_s_1613___" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+        </div>
+
+        <p class="muted small">Other platforms are available on my profiles. Prefer email or LinkedIn for work.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Istiaque Ahmed Shishir. All rights reserved.</p>
+      <div class="footer-actions">
+        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+      </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <p>Reach out via any of the following platforms:</p>
-    <ul class="contact-links">
-      <li><a href="mailto:istiaque1613@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-      <li><a href="https://discord.com/users/782296184692932640" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
-      <li><a href="https://github.com/MrIAS1613" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/istiaque-ahmed-956571274" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://www.facebook.com/mr.ias1613" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="https://www.instagram.com/___mr_i_a_s_1613___" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://wa.me/qr/6GOZTKFTUDIAA1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-      <li><a href="https://x.com/i_a_s_1613" target="_blank"><i class="fab fa-twitter"></i> X</a></li>
-      <li><a href="https://www.reddit.com/user/Mr_I_A_S_1613/" target="_blank"><i class="fab fa-reddit"></i> Reddit</a></li>
-      <li><a href="https://www.snapchat.com/add/mr_ias1613" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a></li>
-      <li><a href="https://pin.it/1TccjMQ8t" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Istiaque Ahmed Shishir. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
